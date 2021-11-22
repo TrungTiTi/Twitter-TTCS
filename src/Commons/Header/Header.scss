@@ -1,6 +1,10 @@
 header{
   width: 25%;
   height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .header{
     width: 70%;
     padding-left: 30%;
@@ -15,11 +19,9 @@ header{
       
     }
 
-
-      .MuiSvgIcon-root {
-        font-size: 1.75rem !important;
-      }
-
+    .MuiSvgIcon-root {
+      font-size: 1.75rem !important;
+    }
 
     .header-button{
       border: none !important;
@@ -39,5 +41,37 @@ header{
           background-color: rgb(23, 124, 192);
       }
     }
+
   }
+  .headerUser{
+    width: 70%;
+    padding-left: 30%;
+    .headerUser__aside{
+      display: flex;
+      padding: 4px ;
+      justify-content: space-between;
+      aside{
+          display: flex;
+          .aside-avatar{
+              margin-right: 12px;
+              img{
+                  width: 48px;
+                  height: 48px;
+                  border-radius: 50%;
+              }
+          }
+          .aside-name{
+              a{
+                  color: black;
+                  text-decoration: none;
+                  font-weight: 700;
+                  &:hover{
+                      text-decoration: underline;
+                  }
+              }
+          }
+      }
+    }
+  }
+
 }

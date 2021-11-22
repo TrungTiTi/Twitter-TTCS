@@ -11,11 +11,12 @@ import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import HeaderOption from './HeaderOption';
 import { Button } from "@material-ui/core";
-import { AccountCircle, AccountCircleOutlined } from '@material-ui/icons';
+import { AccountCircle} from '@material-ui/icons';
 
 const Header = () => {
     return (
         <header>
+            
             <div className="header">
                 <TwitterIcon className="header__twitterIcon" />
 
@@ -33,8 +34,22 @@ const Header = () => {
                 </Button>
                 
             </div>
-            <div className="header-user">
-                <AccountCircle></AccountCircle>
+            <div className="headerUser">
+                <div className="headerUser__aside">
+                    <aside>
+                        <div className="aside-avatar">
+                            <img src="../lisa.jpg"></img>
+                        </div>
+                        <div className="aside-name">
+                            <div >
+                                <Link to="">Me</Link>
+                                <div><span>#me</span></div>
+                            </div>
+                            
+                        </div>
+                    </aside>
+                    
+                </div>
             </div>
         </header>
       

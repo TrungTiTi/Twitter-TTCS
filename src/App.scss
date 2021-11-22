@@ -1,14 +1,19 @@
 @import './Commons/Header/HeaderOption.scss';
 @import './Commons/Header/Header.scss';
 @import './Components/Main/Home.scss';
+@import './Commons/Right/RightMain.scss';
+@import './Components/Profile/Profile.scss';
+@import './Components/Log/Log.scss';
+
 body{
   $twitter-color: #50b7f5;
   $twitter-background: #e6ecf0;
   $border-bottom:rgb(239, 243, 244);
+  
 }
 
 
 .app {
   display: flex;
- 
+  
 }
