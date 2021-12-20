@@ -1,10 +1,13 @@
+@import '../Variable.scss';
+
 header{
-  width: 25%;
+  width: $width-nomal;
   height: 100vh;
   position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  // header1
   .header{
     width: 70%;
     padding-left: 30%;
@@ -19,6 +22,9 @@ header{
       
     }
 
+    .header--iconScreen{
+      display: none;
+    }
     .MuiSvgIcon-root {
       font-size: 1.75rem !important;
     }
@@ -43,6 +49,7 @@ header{
     }
 
   }
+  // header2
   .headerUser{
     width: 70%;
     padding-left: 30%;
@@ -74,4 +81,63 @@ header{
     }
   }
 
+}
+
+// screen 1280px
+@media only screen and (max-width:1280px) {
+  header{
+    width: $width-nethub;
+    // 
+    .header{
+      width:unset;
+      padding-left: unset;
+      section{
+        position: absolute;
+        right: 0;
+        width: 35%;
+        .header--iconScreen{
+          display: block;
+          color: white;
+          div{
+            border-radius: 50%;
+            background-color:  $twitter-color;
+          }
+        }
+        button{
+          display: none;
+        }
+      }
+    }
+    // 
+    .headerUser{
+      width: 100%;
+      padding: unset;
+      .headerUser__aside{
+        flex-direction: row-reverse;
+        aside{
+          .aside-name{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// screen 768px
+@media only screen and (max-width:768px) {
+  header{
+    .header{
+      section{
+        width: unset;
+      }
+    }
+  }
+}
+
+// screen 576px
+@media only screen and (max-width:576px) {
+  header{
+    display: none;
+  }
 }

@@ -1,9 +1,9 @@
-$border-bottom:rgb(239, 243, 244);
+@import '../../Commons/Variable.scss';
 .main{
     border-left: 1px solid rgb(239, 243, 244);
     border-right: 1px solid rgb(239, 243, 244);
     width: 40%;
-    margin-left: 25%;
+    margin-left: $width-nomal;
 
     .main-top{
         height: 53px;
@@ -16,6 +16,12 @@ $border-bottom:rgb(239, 243, 244);
             font-size: 20px;
             font-weight: 700;
             color: rgb(15, 20, 25);
+        }
+        .main-top-icon{
+            
+            svg{
+                display: none;
+            }
         }
     }
 
@@ -90,6 +96,7 @@ $border-bottom:rgb(239, 243, 244);
                     button{
                         border-radius: 20px;
                         background-color: $twitter-color;
+                        color: white;
                     }
                     .show{
                         z-index: 0;
@@ -107,6 +114,7 @@ $border-bottom:rgb(239, 243, 244);
             .main-content-userName{
                 width: max-content;
                 cursor: pointer;
+                line-height: 2;
                 span{
                     margin-right: 5px;
                 }
@@ -170,3 +178,39 @@ $border-bottom:rgb(239, 243, 244);
     }
 }
 p{width: 100px;}
+
+// screen 1280px
+@media only screen and (max-width:1280px) {
+    .main{
+        margin-left: $width-nethub;
+        width: 48%;
+    }
+}
+
+// screen 768px
+@media only screen and (max-width:768px) {
+    .main{
+        margin-left: $width-nethub;
+        width: 85%;
+    }
+}
+
+// screen 576px
+@media only screen and (max-width:576px) {
+    .main{
+        margin-left: 0;
+        width: 100%;
+        .main-top{
+            .main-top-icon{
+                display: flex;
+                align-items: center;
+                svg{
+                    display: block;
+                }
+                span{
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import { Cancel, ChatBubble, Gif, Image, SentimentSatisfied, Share, ThumbUp, VerifiedUserRounded} from '@material-ui/icons';
+import { Cancel, ChatBubble, Gif, HomeOutlined, Image, Search, SentimentSatisfied, Share, ThumbUp, VerifiedUserRounded} from '@material-ui/icons';
 import React, { useEffect, useState } from 'react';
 import { Button } from "@material-ui/core";
 import { Link } from 'react-router-dom';
@@ -31,7 +31,10 @@ const Home = () => {
         <div className="main">
             <div className="main-top">
                 <span>Home</span>
-                <span>icon</span>
+                <span className="main-top-icon">
+                    <Search></Search>
+                    <span>icon</span>
+                </span>
             </div>
             <div className="main-form">
                 <div className="main__avatar">
@@ -75,7 +78,10 @@ const Home = () => {
                 </div>
             </div>
             <HomePost></HomePost>
-            <HomePost></HomePost>           
+            <HomePost></HomePost> 
+            <div className="main-bottom">
+                
+            </div>          
         </div>
     );
 };

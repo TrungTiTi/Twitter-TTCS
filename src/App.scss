@@ -5,15 +5,12 @@
 @import './Components/Profile/Profile.scss';
 @import './Components/Log/Log.scss';
 
-body{
-  $twitter-color: #50b7f5;
-  $twitter-background: #e6ecf0;
-  $border-bottom:rgb(239, 243, 244);
-  
-}
 
 
-.app {
-  display: flex;
-  
+.app{
+  .container {
+    display: flex;
+  //   padding-left: 10%;
+  //   padding-right: 6%;
+  }
 }

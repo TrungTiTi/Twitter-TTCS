@@ -12,9 +12,11 @@ import Log from './Components/Log/Log';
 const Element = ({Elem}) =>{
   return(
     <div className="app">
+      <div className="container">
       <Header />
       <Elem />
       <RightMain />
+      </div>
     </div>
   )
 }

@@ -25,3 +25,16 @@ $twitter-color: #50b7f5;
 .headerOption--active{
     color: $twitter-color;
 }
+
+@media only screen and ( max-width: 1280px ) {
+    .headerOption{
+        span{
+            display: none;
+        }
+    }
+}
+@media only screen and ( max-height: 600px ) {
+    .headerOption{
+        padding: 10px;
+    }
+}
